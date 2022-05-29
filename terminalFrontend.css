@@ -1,0 +1,55 @@
+body {
+    background-color: #193549;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 5px #dbd576;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+
+#terminalWindow {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.promptContainer {
+    display: flex;
+    flex: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 3px;
+    height: 13px;
+}
+
+a {
+    color: #fff;
+}
+
+.promptCursor {
+    margin-left: 1px;
+    /* padding-left: 3px; */
+    content: "";
+    width: 10px;
+    height: 13px;
+    display: inline-block;
+    color: #fff;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background: #ffc600;
+    }
+    /* 0% {
+        opacity: 0;
+    } */
+}
